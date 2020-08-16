@@ -1,0 +1,196 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em;
+  min-width: 375px;
+  width: 100%;
+  min-height: 600px;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #022c43;
+  color: #ececec;
+  box-sizing: border-box;
+}
+#drum-machine {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #115173;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ffd700;
+  padding: 1em;
+  box-sizing: border-box;
+}
+#controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 40%;
+}
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 2em;
+  height: 3em;
+  background-color: #022c43;
+}
+#bank-container {
+  margin-top: 1em;
+}
+#bank-container p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+#bank {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffd700;
+  width: 100px;
+  height: 50px;
+  padding: 2px;
+  border: 0;
+  cursor: pointer;
+}
+#toggle {
+  width: 50px;
+  height: 50px;
+  background-color: #022c43;
+}
+#drum-pad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #022c43;
+  height: 60%;
+  width: 100%;
+  padding: 1em 0.5em;
+  box-sizing: border-box;
+}
+.drum-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+.drum-pad {
+  width: 100%;
+  height: 100%;
+  margin: 0 8px;
+  background-color: #ffd700;
+  color: #022c43;
+  border-radius: 5%;
+  border: none;
+  box-sizing: border-box;
+  font-size: 2em;
+  padding: 0;
+  cursor: pointer;
+}
+.drum-pad:focus {
+  outline: none;
+}
+.clip {
+}
+.active {
+  border: 4px solid green;
+}
+
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    background-color: #022c43;
+    color: #ececec;
+    box-sizing: border-box;
+  }
+  #drum-machine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #115173;
+    min-width: 600px;
+    max-width: 800px;
+    height: 400px;
+    border: 4px solid #ffd700;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  #controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+  }
+  #display {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
+    font-size: 2em;
+    height: 3em;
+    background-color: #022c43;
+  }
+  #drum-pad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #022c43;
+    height: 100%;
+    width: 60%;
+    padding: 1em 0.5em;
+    box-sizing: border-box;
+    margin-right: 1em;
+  }
+  .drum-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+  }
+  .drum-pad {
+    width: 100%;
+    height: 100%;
+    margin: 0 8px;
+    border: 4px solid #ffd700;
+    background-color: #ffd700;
+    color: #022c43;
+    border-radius: 5%;
+    box-sizing: border-box;
+    font-size: 2em;
+    padding: 0;
+    cursor: pointer;
+  }
+  .clip {
+  }
+}
